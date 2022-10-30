@@ -30,6 +30,10 @@
        color: white;
        background-color: darkgoldenrod;
    }
+   #email{
+    border-radius: 7px;
+    font-size: 20px;
+   }
    
    button:hover{
        background-color: rgb(129, 98, 20);
@@ -131,6 +135,7 @@
        padding: 50px;
        margin: 21px;
        border-radius: 15px;
+       box-shadow: 3px 3px 15px rgb(113, 112, 112)
    
     }
     .producto:first-child{
