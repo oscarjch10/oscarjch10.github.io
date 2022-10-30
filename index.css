@@ -10,7 +10,10 @@
        margin: 0;
    }
    
-   h1{ font-size: 3.5em;}
+   h1{ 
+      font-size: 3.5em;
+      font-family: 'Bebas Neue', sans-serif;
+   }
    h2{ font-size: 2.7em;}
    h3{ font-size: 1.2em;}
    p{ font-size: 1.25em;}
@@ -18,7 +21,7 @@
    li{ font-size: 1.25em;}
    
    button{
-       font-size: 1.5em;
+       font-size: 1.1em;
        font-weight: bold;
        padding: 10px 40px;
        border-radius: 10px;
@@ -184,96 +187,97 @@
        justify-content: center;
        align-items: flex-end;
     }
-
+   
+   
     /*Modulo WEB*/
-
- @media (min-width: 720px){
-    header{
-     position: static;
-      width: 100%;
-  
-      }
-  
-  
-   header .container{
-      flex-direction: row;
-      justify-content: space-between;
-      
+   
+    @media (min-width: 720px){
+     header{
+      position: static;
+       width: 100%;
+   
+       }
+   
+   
+    header .container{
+       flex-direction: row;
+       justify-content: space-between;
+       
+    }
+   
+    header nav{
+       flex-direction: row;
+       padding-bottom: 0;
+       padding-right: 20px;
+       
+    }
+   
+   
+   #somos-perfumeman .container{
+       display: flex;
+       justify-content: center;
    }
-  
-   header nav{
-      flex-direction: row;
-      padding-bottom: 0;
-      padding-right: 20px;
-      
+   
+   #somos-perfumeman .texto{
+       width: 50%;
+       max-width: 600px;
+       text-align: initial;
+       padding: 0px 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
    }
-  
-  
-  #somos-perfumeman .container{
+   #somos-perfumeman .img-container{
+       background-image: linear-gradient(
+           0deg,
+           rgba(0,0,0,0.5),
+           rgba(0,0,0,0.5)
+       ), url("media/IMAGE.jpeg");
+       background-size: cover;
+       background-position: center center;
+       height: 500px;
+       width: 400px;
+   }
+   
+   #losmasvendidos .catalogo{
       display: flex;
       justify-content: center;
-  }
-  
-  #somos-perfumeman .texto{
-      width: 50%;
-      max-width: 600px;
+   
+   }
+   #losmasvendidos p{
+      display: block;
+      margin-bottom: 30px;
+   }
+   #losmasvendidos h3{
+      margin-top: 0;
+   }
+   
+   #losmasvendidos .producto{
+      padding: 15px;
+      box-shadow: 3px 3px 15px rgb(113, 112, 112)
+   }
+   
+   #caracteristicas{
+      background-image: url("media/hombremoto.jpg");
+      background-repeat: no-repeat;
+      background-size: 500px 500px;
+      background-position: calc(100vw - 700px) 120px;
+   }
+   #caracteristicas .container{
       text-align: initial;
-      padding: 0px 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-  }
-  #somos-perfumeman .img-container{
-      background-image: linear-gradient(
-          0deg,
-          rgba(0,0,0,0.5),
-          rgba(0,0,0,0.5)
-      ), url("media/IMAGE.jpeg");
-      background-size: cover;
-      background-position: center center;
-      height: 500px;
-      width: 400px;
-  }
-  
-  #losmasvendidos .catalogo{
-     display: flex;
-     justify-content: center;
-  
-  }
-  #losmasvendidos p{
-     display: block;
-     margin-bottom: 30px;
-  }
-  #losmasvendidos h3{
-     margin-top: 0;
-  }
-  
-  #losmasvendidos .producto{
-     padding: 15px;
-     box-shadow: 3px 3px 15px rgb(113, 112, 112)
-  }
-  
-  #caracteristicas{
-     background-image: url("media/hombremoto.jpg");
-     background-repeat: no-repeat;
-     background-size: 500px 500px;
-     background-position: calc(100vw - 700px) 120px;
-  }
-  #caracteristicas .container{
-     text-align: initial;
-  
-  }
-  #caracteristicas ul{
-     margin-left: 100px;
-  }
-  footer .container{
-     justify-content: flex-end;
-  }
+   
    }
-  
-   @media(min-width: 1200px) {
-     #caracteristicas{
-        background-position: calc(100vw - 600px);
-     }
-     
+   #caracteristicas ul{
+      margin-left: 100px;
    }
+   footer .container{
+      justify-content: flex-end;
+   }
+    }
+   
+    @media(min-width: 1200px) {
+      #caracteristicas{
+         background-position: calc(100vw - 600px);
+      }
+      
+    }
